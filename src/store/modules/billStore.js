@@ -1,18 +1,26 @@
-import {createSlice} from '@reduxjs/toolkit'
-
-const billStore =  createSlice({
-    name:'bill',
-    initialState:{
-        billList:[]
+import { createSlice } from '@reduxjs/toolkit'
+import api from '../../util/api'
+const billStore = createSlice({
+    name: 'bill',
+    initialState: {
+        billList: []
     },
-    reducers:{
-        setBillList(state,action){
+    reducers: {
+        setBillList(state, action) {
             state.billList = action.payload
         }
     }
 })
 
-const {setBillList} = billStore.actions
+const { setBillList } = billStore.actions
 
+const asyncGetBillList = () => {
+    return async (dispatch) => {
+        const res = await api.getBillList()
+        dispatch(setBillList(res))
+    }
+}
+
+export { asyncGetBillList }
 const billReducer = billStore.reducer
 export default billReducer

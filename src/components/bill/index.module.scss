@@ -1,0 +1,33 @@
+.billContainer {
+  transition: all 0.5s;
+  height: max-content;
+  &.isShow {
+    // border: 1px solid red;
+  }
+}
+
+.navBar {
+    // height: 8vh;
+    // display: flex;
+    // justify-content: center;
+    // >*{
+    //     display: flex;
+    //     align-items: center;
+    // }
+    >*{
+    }
+}
+.billMain {
+//   border: 1px solid green;
+  // max-height: 0;
+  // overflow: hidden;
+  // &.isShow {
+  //   max-height: max-content;
+  // }
+  // > * {
+  //   // border: 1px solid orange;
+  //   display: flex;
+  //   height: 4vh;
+  //   justify-content: space-evenly;
+  // }
+}

@@ -22,6 +22,10 @@ const router = createHashRouter([
     {
         path: '/increment',
         element: <Increment />
+    },
+    {
+        path: '*',
+        element: <Layout />,
     }
 ])
 

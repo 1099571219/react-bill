@@ -1,10 +1,7 @@
-.mainContainer{
-    width: 100vw;
-    height: 80vh;
-    background-color: gray;
-}
+
 .container{
     width: 100vw;
     height: 100vh;
-    border: 1px solid pink;
+    border: 5px solid pink;
+    background-color: white;
 }
