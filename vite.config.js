@@ -10,6 +10,9 @@ export default defineConfig({
   resolve: {
     alias: { "@": resolve(__dirname, './src') },
   },
+  build:{
+    sourcemap: true
+  },
   css: {
     postcss: {
       plugins: [tailwindcss, autoprefixer]
