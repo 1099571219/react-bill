@@ -1,4 +1,4 @@
-import serviceAxios from "./http"
+import {serviceAxios} from "@/utils"
 
 const getBillList = async () => {
     const res = await serviceAxios.get("/billList")

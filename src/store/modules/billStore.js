@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
-import api from '../../util/api'
+import api from '../../apis/api'
 const billStore = createSlice({
     name: 'bill',
     initialState: {
