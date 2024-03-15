@@ -1,8 +1,8 @@
 import { createHashRouter } from 'react-router-dom'
-import Increment from '../page/increment/index'
-import Layout from '../page/layout'
-import Month from '../page/month'
-import Year from '../page/year'
+import Increment from '@/pages/increment'
+import Layout from '@/pages/layout'
+import Month from '@/pages/month'
+import Year from '@/pages/year'
 
 const router = createHashRouter([
     {
